@@ -2,7 +2,11 @@ import React, { Component } from "react";
 
 import Player from "./Player";
 import { searchTracks } from "../services/spotifyApi";
-
+/**
+ * Tracks component
+ * @param {string} search
+ * @author [Ender Bonnet](https://github.com/enbonnet)
+ */
 class Tracks extends Component {
   async componentDidUpdate(prevProps) {
     if (this.props.search !== prevProps.search) {
@@ -17,10 +21,10 @@ class Tracks extends Component {
         <h1 className="title">Caciones</h1>
         {tracks
           ? tracks.map(track => (
-              <div className="tracks">
+              <div className="tracks name">
                 <a
                   href={`${track.preview_url}`}
-                  className="is-block name"
+                  className="is-block"
                   key={track.id}
                 >
                   {track.trackName}

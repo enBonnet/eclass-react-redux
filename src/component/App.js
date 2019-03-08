@@ -7,7 +7,11 @@ import Tracks from "../containers/Tracks";
 import Playlists from "../containers/Playlists";
 import Artists from "../containers/Artists";
 import Albums from "../containers/Albums";
-
+/**
+ * App component
+ * Wrapper component
+ * @author [Ender Bonnet](https://github.com/enbonnet)
+ */
 const App = () => {
   return (
     <Container>

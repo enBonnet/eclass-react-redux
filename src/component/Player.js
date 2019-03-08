@@ -1,5 +1,10 @@
 import React, { Component, Fragment } from "react";
-
+/**
+ * Player component
+ * Player for preview url song
+ * @param {string} url
+ * @author [Ender Bonnet](https://github.com/enbonnet)
+ */
 class Player extends Component {
   state = {
     play: false
@@ -19,11 +24,11 @@ class Player extends Component {
           onMouseLeave={this.togglePlay}
         >
           {this.state.play ? (
-            <span role="img" aria-label="emoji">
+            <span role="img" aria-label="sonando">
               🎶
             </span>
           ) : (
-            <span role="img" aria-label="emoji">
+            <span role="img" aria-label="sonar">
               🔈
             </span>
           )}
@@ -34,5 +39,3 @@ class Player extends Component {
 }
 
 export default Player;
-
-// https://p.scdn.co/mp3-preview/92d40a2ae211cceb264e9ee1e67fe05f4d788200?cid=98319c258f6f4b738a62d1893145a565

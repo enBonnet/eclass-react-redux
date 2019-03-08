@@ -1,7 +1,11 @@
 import React, { Component } from "react";
 
 import { getUserPlaylists, getTracksByPlaylist } from "../services/spotifyApi";
-
+/**
+ * Playlist component
+ * @param {string} hash
+ * @author [Ender Bonnet](https://github.com/enbonnet)
+ */
 class Playlists extends Component {
   async componentDidUpdate(prevProps) {
     if (this.props.hash !== prevProps.hash) {

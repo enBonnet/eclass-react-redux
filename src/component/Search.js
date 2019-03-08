@@ -2,7 +2,12 @@ import React, { Fragment } from "react";
 
 import Login from "./Login";
 import User from "../containers/User";
-
+/**
+ * Search component
+ * @param {string} hash
+ * @param {function} setSearch
+ * @author [Ender Bonnet](https://github.com/enbonnet)
+ */
 const Search = ({ hash, setSearch }) => {
   return (
     <div>

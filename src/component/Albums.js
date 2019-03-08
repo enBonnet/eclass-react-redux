@@ -1,7 +1,10 @@
 import React, { Component } from "react";
 
 import { searchAlbums, getTracksByAlbum } from "../services/spotifyApi";
-
+/**
+ * Albums component
+ * @author [Ender Bonnet](https://github.com/enbonnet)
+ */
 class Albums extends Component {
   async componentDidUpdate(prevProps) {
     if (this.props.search !== prevProps.search) {

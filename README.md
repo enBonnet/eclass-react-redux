@@ -1,6 +1,25 @@
 ## eClass test con React y Redux
 
-#### Para probar la aplicación
+#### Librerías implmentada para la API de Sporify
+
+- [spotify-web-api-js](https://www.npmjs.com/package/spotify-web-api-js)
+
+#### Para probar la demo
+
+-
+
+#### Para probar la aplicación en local
+
+```bash
+git clone https://github.com/enBonnet/eclass-react-redux
+cd eclass-react-redux
+npm install
+cp .env.sample .env
+# completar las variabales del archivo .env
+npm start
+```
+
+Para obetener el `REACT_APP_SPOTIFY_CLIENT_ID` ve la [documentacion](https://developer.spotify.com/documentation/general/guides/app-settings/) de Spotify.
 
 #### Caracteristicas de la aplicacion
 

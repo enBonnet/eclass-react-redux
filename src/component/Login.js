@@ -1,6 +1,11 @@
 import React from "react";
 import { connect } from "react-redux";
-
+/**
+ * Login component
+ * Connected with Redux, get login info from Sporify
+ * @param {object} dispatch
+ * @author [Ender Bonnet](https://github.com/enbonnet)
+ */
 import {
   checkUrlForSpotifyAccessToken,
   getUrlToSpotifyForLogin
