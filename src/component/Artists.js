@@ -12,8 +12,9 @@ class Artists extends Component {
       this.props.setArtists(tracks);
     }
   }
-  async getArtistsAlbums(id) {
+  async getArtistsAlbums(id, search) {
     const albums = await getArtistAlbums(id);
+    this.props.setSearch(search);
     this.props.setAlbums(albums);
   }
   render() {
@@ -24,7 +25,9 @@ class Artists extends Component {
         {artists
           ? artists.map(artist => (
               <p
-                onClick={() => this.getArtistsAlbums(artist.id)}
+                onClick={() =>
+                  this.getArtistsAlbums(artist.id, artist.artistName)
+                }
                 className="name"
                 key={artist.id}
               >

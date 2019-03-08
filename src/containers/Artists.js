@@ -1,7 +1,7 @@
 import { connect } from "react-redux";
 import Artists from "../component/Artists";
 
-import { setArtists, setAlbums } from "../actions";
+import { setArtists, setAlbums, setSearch } from "../actions";
 
 const mapStateToProps = state => ({
   search: state.spotify.search,
@@ -10,7 +10,8 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => ({
   setArtists: artists => dispatch(setArtists(artists)),
-  setAlbums: albums => dispatch(setAlbums(albums))
+  setAlbums: albums => dispatch(setAlbums(albums)),
+  setSearch: search => dispatch(setSearch(search))
 });
 
 export default connect(
