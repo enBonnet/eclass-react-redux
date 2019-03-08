@@ -6,7 +6,7 @@
 
 #### Para probar la demo
 
--
+- [https://wizardly-pike-4a6a86.netlify.com/](https://wizardly-pike-4a6a86.netlify.com/)
 
 #### Para probar la aplicación en local
 
@@ -19,7 +19,7 @@ cp .env.sample .env
 npm start
 ```
 
-Para obetener el `REACT_APP_SPOTIFY_CLIENT_ID` ve la [documentacion](https://developer.spotify.com/documentation/general/guides/app-settings/) de Spotify.
+Para obtener el `REACT_APP_SPOTIFY_CLIENT_ID` ve la [documentacion](https://developer.spotify.com/documentation/general/guides/app-settings/) de Spotify.
 
 #### Caracteristicas de la aplicacion
 
