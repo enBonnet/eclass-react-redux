@@ -6,7 +6,7 @@
 
 #### Para probar la demo
 
-- [https://wizardly-pike-4a6a86.netlify.com/](https://wizardly-pike-4a6a86.netlify.com/)
+- [wizardly-pike-4a6a86.netlify.com/](https://wizardly-pike-4a6a86.netlify.com/)
 
 #### Para probar la aplicación en local
 

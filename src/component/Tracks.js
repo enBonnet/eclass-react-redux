@@ -16,12 +16,13 @@ class Tracks extends Component {
   }
   render() {
     const { tracks } = this.props;
+    const id = 0;
     return (
       <div>
         <h1 className="title">Caciones</h1>
         {tracks
           ? tracks.map(track => (
-              <div className="tracks name">
+              <div key={`${track.id}-${id + 1}`} className="tracks name">
                 <a
                   href={`${track.preview_url}`}
                   className="is-block"
@@ -29,7 +30,11 @@ class Tracks extends Component {
                 >
                   {track.trackName}
                 </a>
-                {track.preview_url ? <Player url={track.preview_url} /> : ""}
+                {track.preview_url ? (
+                  <Player key={`${track.id}-song`} url={track.preview_url} />
+                ) : (
+                  ""
+                )}
               </div>
             ))
           : "No hay canciones que coincidan con tu busqueda"}

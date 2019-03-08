@@ -91,9 +91,7 @@ export async function getTracksByAlbum(id) {
 
 export async function getTracksByPlaylist(id) {
   try {
-    const playlistsResponse = await spotifyApi.getPlaylist(
-      "4vHIKV7j4QcZwgzGQcZg1x"
-    );
+    const playlistsResponse = await spotifyApi.getPlaylist(id);
     const tracks = playlistsResponse.tracks.items.map(trackObject => {
       const { id, name, preview_url } = trackObject.track;
       return { id: id, trackName: name, preview_url: preview_url };

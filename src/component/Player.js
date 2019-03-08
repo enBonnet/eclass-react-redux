@@ -7,14 +7,20 @@ import React, { Component, Fragment } from "react";
  */
 class Player extends Component {
   state = {
-    play: false
+    play: false,
+    url: this.props.url
   };
-  audio = new Audio(this.props.url);
   togglePlay = () => {
     this.setState({ play: !this.state.play }, () => {
       this.state.play ? this.audio.play() : this.audio.pause();
     });
   };
+  async componentDidUpdate(prevProps) {
+    if (this.props.url !== prevProps.url) {
+      this.setState({ url: this.props.url });
+    }
+  }
+  audio = new Audio(this.state.url);
   render() {
     return (
       <Fragment>
